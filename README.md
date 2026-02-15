@@ -1,8 +1,8 @@
-# 🛡️ Fraud Detection System
+# 🛡️ Payment Processing System with 5-Factor Fraud Detection
 
-**VexStorm'26 - Capital-Core Track: Fraud Detection & Personalized Financial Advisory**
+**VexStorm'26 - Capital-Core Track: Advanced Fraud Detection & Secure Payment Processing**
 
-Real-time transaction fraud detection system with intelligent risk scoring and ML-ready architecture.
+Enterprise-grade payment processing system with **multi-factor fraud detection** using AI-powered risk analysis across 5 independent security factors.
 
 ---
 
@@ -26,21 +26,49 @@ User initiates payment → System evaluates in real-time → Decision returned (
 
 ## ✨ Features
 
-### 🔍 Real-Time Fraud Detection
+### 🔍 5-Factor Fraud Detection
+- **Multi-Factor Analysis**: Comprehensive risk assessment across 5 independent factors
 - **Instant Analysis**: Sub-second transaction evaluation
-- **Multi-Factor Scoring**: Amount thresholds, account flagging, velocity checks
 - **Risk Levels**: Low (0-39) / Medium (40-69) / High (70-100)
+- **Real-Time Processing**: Immediate decision with detailed risk breakdown
+
+#### The 5 Security Factors:
+1. **💰 Transaction Amount Analysis** - Deviation from user's spending patterns, statistical outliers
+2. **👤 Recipient Profile Check** - Flagged accounts, new recipients, relationship tracking
+3. **🕐 Transaction Context** - Time-of-day patterns, late-night transactions (2-6 AM)
+4. **📊 User Behavior Signals** - Velocity checks (5+ txns/hour), frequency patterns
+5. **📈 Historical Pattern Analysis** - Spending deviation, behavior changes over time
 
 ### 🎯 Decision Engine
 - **Approve**: Low-risk transactions processed immediately
 - **Warn**: Medium-risk flagged for manual review
 - **Block**: High-risk transactions prevented
 
-### 📊 Risk Indicators
-- **High Transaction Amounts**: Transactions > $50,000
-- **Flagged Accounts**: Pre-identified suspicious receivers
-- **Velocity Checks**: Multiple transactions in short timeframes
-- **Behavioral Patterns**: Round amounts, self-transfers
+### 📊 Multi-Factor Risk Indicators
+**Factor 1 - Amount Analysis:**
+- Transactions >$50,000 (high risk)
+- 3-5x above user's average spending
+- Statistical outliers (>3 standard deviations)
+
+**Factor 2 - Recipient Profile:**
+- Flagged/blacklisted accounts
+- New/unknown recipients
+- Unusual recipient patterns
+
+**Factor 3 - Transaction Context:**
+- Late-night transactions (2-6 AM)
+- Geographic anomalies
+- Device/IP patterns
+
+**Factor 4 - User Behavior:**
+- 5+ transactions per hour (velocity)
+- Rapid transaction sequences
+- Unusual activity patterns
+
+**Factor 5 - Historical Analysis:**
+- Sudden spending pattern changes
+- Deviation from historical norms
+- Account age and activity history
 
 ### 🚀 Production-Ready Architecture
 - **FastAPI Backend**: Clean separation of concerns (API/Services/Models)
