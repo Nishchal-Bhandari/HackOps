@@ -16,11 +16,20 @@ This is a **production-quality prototype** that demonstrates intelligent fraud d
 User initiates payment → System evaluates in real-time → Decision returned (Approve/Warn/Block)
 ```
 
+### 🚀 Quick Deploy (One-Click)
+
+**Deploy in 5 minutes:**
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNishchal-Bhandari%2FHackOps&root-directory=frontend&env=NEXT_PUBLIC_API_URL&project-name=hackops-payment-system)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Nishchal-Bhandari/HackOps)
+
+**Deployment Guide:** See [ONE_CLICK_DEPLOY.md](ONE_CLICK_DEPLOY.md) for full instructions.
+
 ### Live Demo
 
-- 🌐 **Frontend**: [Deploy to Vercel](https://vercel.com)
-- 🔌 **Backend API**: [Deploy to Railway](https://railway.app)
-- 📖 **API Docs**: Visit `https://your-backend.railway.app/docs`
+- 🌐 **Frontend**: Click Vercel button above
+- 🔌 **Backend API**: Click Render button above
+- 📖 **Docs**: Detailed guides in [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)
 
 ---
 
